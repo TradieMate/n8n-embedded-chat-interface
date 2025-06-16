@@ -27,7 +27,7 @@ class N8nEmbeddedChatInterfaceElement extends HTMLElement {
 }
 
 // Load styles
-fetch(new URL("./styles/output.css", import.meta.url))
+fetch(new URL(/* @vite-ignore */ "./index.css", import.meta.url))
 	.then((res) => res.text())
 	.then((css) => {
 		class N8nEmbeddedChatInterfaceElementWithStyles extends N8nEmbeddedChatInterfaceElement {
